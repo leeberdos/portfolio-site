@@ -8,47 +8,93 @@
         <meta name="description" content="This is Lee's portfolio page">
         <link rel="stylesheet" href="style.css"/>
     </head>
+
 <body>
+
 <div class="container">
-        <div class="box-1" name="header">
+
+
+        <div class="box-1" name="header" id="header">
             <h1>Portfolio Website for Lee Berdos </h1>
             <h2>Welcome to my website!</h2>
         </div>
-    <div class="box-1" name="about-me">
+
+
+    <div class="box-1" name="about-me" id="about-me">
             <h3>Get to know me</h3>
             <p>After an extensive career in hospitality, and working eight years in the finance and insurance sector, 
-                I made the jump to web development. And boy, was it worth it! Along with a deep commitment to my work, flourishing
+                I made the jump to web development. Along with a deep commitment to my work, flourishing
                 in group project settings, I find great enjoyment problem solving complex issues my team and I run into. My unique
                 background working with many large companies and also dealing face to face with customers issues over the years give me a 
                 unique insight into the realm of possibility, innovation, and ambitious development when addressing emerging business needs.</p>
-                <p> Below you can find a link to my LinkedIn, or send me a message!</p>
+                <p> Below you can view some of my projects, find a link to my LinkedIn, or send me a message!</p>
     </div>
-    <div class="box-1" name="contact">
+
+
+    <div class="box-1" name="contact" id="contact">
                 <h3>Contact Me</h3>
                 <form>
                     <div>
                         <label for="name">Name: </label>
                         <input type="text" id="name" name="name">
                         <div>
+                            <br>
                         <label for="email">Email: </label>
                         <input type="text" id="email" name="email">
                         </div>
                         <div>
+                            <br>
                         <label for="message">Message: </label>
                         <textarea id="message" name="message" rows="3"></textarea>
                         </div>
+                            <br>
                         <button type="submit">Submit</button>
                     </div>
                 </form>
             <div>
+                <br>
             <a href="https://www.linkedin.com/in/pantelis-berdos-776a3630/">
                 <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" height="64px" width="64px" alt="LinkedIn profile">
             </a>
             </div>
+
+
+            <div>
+                <br>
+                <button onclick="darkMode()">Toggle Dark Mode!</button>
+            </div>
+
+
     </div>
+
+
     <div class="photo">
-            <img src="https://www.meistertask.com/blog/wp-content/uploads/2020/06/Meeting-Productivity-Tips-scaled.jpg" height="300" width="640" alt="Team">
+            <img src="selfie.jpg" height="400" width="333" alt="Team">
     </div>
+
+    <div class="box-1">
+    <h2>My Recent Projects:</h2>
+    <br>
+    <h3>My Portfolio Site</h3>
+    <img src="portsitesnapshot.jpg" height="200" width="300" alt="Team">
+    <p>A website outlining my profile, contact information and a few of my accomplishments as a web developer. Click the button below to visit!</p>
+    <button onClick="window.location.reload();">Portfolio page!</button>
+    </div>
+
+    <div class="box-1">
+    <h3>JS To-Do List</h3>
+    <br>
+    <img src="todoscreenshot.jpg" height="200" width="300" alt="Team">
+    <p>This is a JavaScript project based off of a tutorial I completed online. It is a functioning To-Do list
+        that will save items you need to complete locally on your machine. This app allows you to add, remove, mark complete, and filter items
+        on your to-do list. The browser will save the list even if you exit! Click the button below to try it out :
+    </p>
+    <br>
+    <a href="./vanilla javascript/index.html"><button>To-Do List App!</button></a>
+
+    </div>
+
 </div>
+<script src="script.js"></script>
 </body>
 </html>
